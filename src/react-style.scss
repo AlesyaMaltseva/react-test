@@ -1,0 +1,13 @@
+#block {
+    a {
+        &:link {
+            color:green
+        }
+        &:hover {
+            color:yellow
+        }
+        &:visited {
+            color:chocolate
+        }
+    }
+}
