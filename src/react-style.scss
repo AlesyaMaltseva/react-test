@@ -1,11 +1,14 @@
 @mixin mix {
-	width: 100px;
-	height: 100px;
+	font-weight: bold;
+	text-align: center;
 }
 
 
 $varible:40px;
+$color:lab(57.38% 40.84 54.99);
 
 p {
-    font-size: $varible - 20;
+    font-size: $varible - 5;
+	color: $color;
+	@include mix();
 }
