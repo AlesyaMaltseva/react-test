@@ -9,7 +9,7 @@ export default function Lesson() {
 
 return <>
 
-    <p>Импортировали абзац</p>
+    <p>Текстовое содержимое p</p>
 
     </>
 }

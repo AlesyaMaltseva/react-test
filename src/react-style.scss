@@ -1,14 +1,15 @@
 @mixin mix {
 	font-weight: bold;
 	text-align: center;
+	text-decoration: dotted;
 }
 
 
 $varible:40px;
-$color:lab(57.38% 40.84 54.99);
+$color:rgb(255, 185, 34);
 
 p {
-    font-size: $varible - 5;
+    font-size: $varible - 15;
 	color: $color;
 	@include mix();
 }
