@@ -14,14 +14,14 @@ const initObj = {
 
 	const [obj, setObj] = useState(initObj);
 	
-	return <div>
-        <div id="block">А теперь <p><a href="" class="class">Тестируем SASS</a></p></div>
+	return <>
+        <p>Это абзац</p>
 		{/* <input value={obj.prop1} onChange={event=>handleChange('prop1',event)}/><br />
         <input value={obj.prop2} /><br />
         <input value={obj.prop3} />
         <br />
 		{obj.prop1}-{obj.prop2}-{obj.prop3} */}
-	</div>;
+	</>;
 
 
 }

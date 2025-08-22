@@ -1,13 +1,11 @@
-#block {
-    a {
-        &:link {
-            color:green
-        }
-        &:hover {
-            color:yellow
-        }
-        &:visited {
-            color:chocolate
-        }
-    }
+@mixin mix {
+	width: 100px;
+	height: 100px;
+}
+
+
+$varible:40px;
+
+p {
+    font-size: $varible - 20;
 }
