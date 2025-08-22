@@ -15,7 +15,7 @@ const initObj = {
 	const [obj, setObj] = useState(initObj);
 	
 	return <>
-        <p>Это абзац</p>
+        <p>Текстовое содержимое p</p>
 		{/* <input value={obj.prop1} onChange={event=>handleChange('prop1',event)}/><br />
         <input value={obj.prop2} /><br />
         <input value={obj.prop3} />
