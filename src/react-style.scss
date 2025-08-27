@@ -1,11 +1,19 @@
-* {
-	scroll-behavior: smooth;
+@media (prefers-color-scheme: light) {
+    :root {
+        color: #ffffff;
+        background-color: #000000;
+    }
 }
 
-body {
-	box-sizing: border-box;
-	overflow: hidden;
+#root {
+    width:85%;
 }
+
+* {
+	scroll-behavior: smooth;
+    background-color: black;
+}
+
 
 @mixin mix {
 	font-weight: bold;
@@ -34,11 +42,11 @@ p {
 
 body {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
   min-height: 100vh;
   flex-direction: column;
-  background-color: black;
+  box-sizing: border-box;   
+	//overflow: hidden;
+   justify-content: flex-start;
 }
 
 .box.green, .gradient-green {
@@ -80,4 +88,29 @@ body {
 	width:$size;
 	height:$size;
 	background-color:$color;
+    margin:20px;
+    opacity: 0.1;
+}
+
+.boxes {
+    display:flex;    
+}
+
+#top-menu {
+    display:inline-flex;
+    width: 100%;
+    font-size: 20px;
+    cursor: pointer;
+    justify-content: flex-end; 
+    margin-top:20px;   
+    > a {     
+        color:white; 
+        opacity: 0; 
+        &:not(:first-child) {
+            margin-left:50px;
+        } 
+        &:hover {
+            color:#5be1ff;
+        }  
+    }
 }
